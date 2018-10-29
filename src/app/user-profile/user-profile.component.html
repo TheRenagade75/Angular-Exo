@@ -1,0 +1,9 @@
+
+<img class="card-img-top" src={{user.photo}} alt="Card image cap Responsive image" style="max-height: 250px;">
+<p> Nom: {{user.name}}</p>
+<p>Prénom: {{user.firstName}}</p>
+<form>
+  <p>{{quote}}</p><input  [(ngModel)]="quote" type="quote" name="quote"/>
+</form>
+<p [hidden]="isHidden"> Age: {{user.age}}</p>
+<button (click)="show()"> Masquer/Afficher l'âge</button>
